@@ -2,10 +2,10 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import renderField from 'components/FormInputs/renderField';
 
-const FormElements = () => (
+const KafkaElements = () => (
   <div className="card">
     <div className="header">
-      <h4>Form Elements</h4>
+      <h4>Kafka Elements</h4>
     </div>
     <div className="content">
       <form className="form-horizontal">
@@ -66,46 +66,6 @@ const FormElements = () => (
           <div className="col-md-9">
             <Field
               name="hostName"
-              type="text"
-              placeholder="This input is disabled"
-              disabled={false}
-              component={renderField} />
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label className="control-label col-md-3">Cassandra DB</label>
-        </div>
-
-        <div className="form-group">
-          <label className="control-label col-md-3">Username</label>
-          <div className="col-md-9">
-            <Field
-              name="userName"
-              type="text"
-              placeholder="This input is disabled"
-              disabled={false}
-              component={renderField} />
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label className="control-label col-md-3">Password</label>
-          <div className="col-md-9">
-            <Field
-              name="password"
-              type="password"
-              placeholder="This input is disabled"
-              disabled={false}
-              component={renderField} />
-          </div>
-        </div>
-        
-        <div className="form-group">
-          <label className="control-label col-md-3">Cassandra Host</label>
-          <div className="col-md-9">
-            <Field
-              name="cassandraHost"
               type="text"
               placeholder="This input is disabled"
               disabled={false}
@@ -216,5 +176,5 @@ const FormElements = () => (
 );
 
 export default reduxForm({
-  form: 'formElements'
-})(FormElements);
+  form: 'kafkaElements'
+})(KafkaElements);

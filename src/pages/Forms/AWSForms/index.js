@@ -1,9 +1,7 @@
 import React from 'react';
-import StackedForm from './StackedForm';
-import HorizontalForm from './HorizontalForm';
-import FormElements from './FormElements';
+import AWSElements from './AWSElements';
 
-const RegularForms = () => (
+const AWSForms = () => (
   <div>
     <div className="row">
       {/* <div className="col-md-6">
@@ -15,7 +13,7 @@ const RegularForms = () => (
     </div>
     <div className="row">
       <div className="col-md-12">
-        <FormElements initialValues={{
+        <AWSElements initialValues={{
           radioGroup: 'male',
           a: true,
           checked: true,
@@ -28,4 +26,4 @@ const RegularForms = () => (
   </div>
 );
 
-export default RegularForms;
+export default AWSForms;

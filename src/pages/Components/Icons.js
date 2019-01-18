@@ -4,29 +4,7 @@ const iconData = ["pe-7s-album", "pe-7s-arc", "pe-7s-back-2", "pe-7s-bandaid", "
 
 const Icons = () => (
   <div className="content">
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="card">
-            <div className="header">
-              <h4 className="title">202 Awesome Stroke Icons</h4>
-              <p className="category">Handcrafted by our friends from <a target="_blank" href="http://themes-pixeden.com/font-demos/7-stroke/index.html">Pixeden</a></p>
-            </div>
-            <div className="content all-icons">
-              <div className="row">
-                { iconData.map(iconName => (
-                  <div className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6" key={iconName}>
-                    <div className="font-icon-detail"><i className={iconName}></i>
-                      <input type="text" defaultValue={iconName} />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
   </div>
 );
 

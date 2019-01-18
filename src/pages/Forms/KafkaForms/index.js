@@ -1,7 +1,5 @@
 import React from 'react';
-import StackedForm from './StackedForm';
-import HorizontalForm from './HorizontalForm';
-import FormElements from './FormElements';
+import KafkaElements from './KafkaElements';
 
 const RegularForms = () => (
   <div>
@@ -15,7 +13,7 @@ const RegularForms = () => (
     </div>
     <div className="row">
       <div className="col-md-12">
-        <FormElements initialValues={{
+        <KafkaElements initialValues={{
           radioGroup: 'male',
           a: true,
           checked: true,

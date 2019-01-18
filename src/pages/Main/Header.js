@@ -4,19 +4,13 @@ import { toggleMobileNavVisibility } from '../../reducers/Layout';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl } from 'react-bootstrap';
 
 const Header = ({
-  showMobileMenu,
-  toggleMobileNavVisibility
+  // showMobileMenu,
+  //toggleMobileNavVisibility
 }) => (
+  // <div style={{backgroundColor:"#104a10", paddingLeft:'50px'}}>
     <Navbar fluid={true}>
-      <Navbar.Header>
-        <button type="button" className="navbar-toggle" data-toggle="collapse" onClick={toggleMobileNavVisibility}>
-          <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-        </button>
-      </Navbar.Header>
-
+     
+      <div style={{backgroundColor:"#104a10",paddingLeft:'50px'}}>
       <Navbar.Collapse>
 
         <Nav>
@@ -47,8 +41,13 @@ const Header = ({
           </NavDropdown>
           <NavItem>Log out</NavItem>
         </Nav>
+        <div className="line"></div>
+        <br/>
       </Navbar.Collapse>
+      
+      </div>
     </Navbar>
+    // </div>
   );
 
 const mapDispatchToProp = dispatch => ({

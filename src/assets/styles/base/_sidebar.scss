@@ -1,7 +1,7 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif;
-  background: white;
+  background: #e6e6e6;
   overflow: hidden;
 }
 
@@ -47,10 +47,10 @@ a {
   color: $sidebar-color;
   font-weight: 200;
   transition-duration: .2s, .2s, .35s;
-  background-color: $sidebar-bg;
+  background-color: #104a10;
 
   .sidebar-wrapper {
-    background-color: $sidebar-bg;
+    background-color: #104a10;
     height: calc(100vh - 64px);
     overflow: auto;
   }
@@ -125,7 +125,7 @@ a {
         background: white;
       }
       > a {
-        padding: 20px 30px;
+        padding: 5px 10px;
         font-size: 14px;
         color: $sidebar-color;
         &:hover {

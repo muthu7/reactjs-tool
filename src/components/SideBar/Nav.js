@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
 
-
 class Nav extends Component {
 
   state = {};
@@ -29,11 +28,11 @@ class Nav extends Component {
           <Collapse in={this.state.componentMenuOpen}>
             <div>
               <ul className="nav">
-                <li className={this.isPathActive('/components/buttons') ? 'active' : null}>
-                  <Link to="/components/buttons">To KAFKA</Link>
+                <li className={this.isPathActive('/forms/kafka-forms') ? 'active' : null}>
+                  <Link to="/forms/kafka-forms">To KAFKA</Link>
                 </li>
-                <li className={this.isPathActive('/components/grid') ? 'active' : null}>
-                  <Link to="/components/grid">To AWSKnisesis</Link>
+                <li className={this.isPathActive('/forms/AWS-forms') ? 'active' : null}>
+                  <Link to="/forms/AWS-forms">To AWSKnisesis</Link>
                 </li>
                 <li className={this.isPathActive('/components/icons') ? 'active' : null}>
                   <Link to="/components/icons">To AMQ</Link>
@@ -60,6 +59,7 @@ class Nav extends Component {
                   <Link to="/forms/validation-forms">To Publisher</Link>
                 </li>
               </ul>
+
             </div>
           </Collapse>
         </li>
